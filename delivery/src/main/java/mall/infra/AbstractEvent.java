@@ -1,6 +1,6 @@
 package mall.infra;
 
-import mall.DeveryApplication;
+import mall.DeliveryApplication;
 import mall.config.kafka.KafkaProcessor;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -32,7 +32,7 @@ public class AbstractEvent {
         /**
          * spring streams 방식
          */
-        KafkaProcessor processor = DeveryApplication.applicationContext.getBean(
+        KafkaProcessor processor = DeliveryApplication.applicationContext.getBean(
             KafkaProcessor.class
         );
         MessageChannel outputChannel = processor.outboundTopic();

@@ -4,7 +4,7 @@ import mall.domain.DeliveryStarted;
 import mall.domain.DeliveryComplated;
 import mall.domain.DeliveryCancelled;
 import mall.domain.DeleveryReturned;
-import mall.DeveryApplication;
+import mall.DeliveryApplication;
 import javax.persistence.*;
 import java.util.List;
 import lombok.Data;
@@ -89,7 +89,7 @@ public class Delivery  {
     }
 
     public static DeliveryRepository repository(){
-        DeliveryRepository deliveryRepository = DeveryApplication.applicationContext.getBean(DeliveryRepository.class);
+        DeliveryRepository deliveryRepository = DeliveryApplication.applicationContext.getBean(DeliveryRepository.class);
         return deliveryRepository;
     }
 

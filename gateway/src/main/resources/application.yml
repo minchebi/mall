@@ -8,7 +8,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: devery
+        - id: delivery
           uri: http://localhost:8081
           predicates:
             - Path=/deliveries/**, 
@@ -47,8 +47,8 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: devery
-          uri: http://devery:8080
+        - id: delivery
+          uri: http://delivery:8080
           predicates:
             - Path=/deliveries/**, 
         - id: product

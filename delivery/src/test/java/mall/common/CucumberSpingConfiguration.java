@@ -1,12 +1,12 @@
 package mall.common;
 
 
-import mall.DeveryApplication;
+import mall.DeliveryApplication;
 import io.cucumber.spring.CucumberContextConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @CucumberContextConfiguration
-@SpringBootTest(classes = { DeveryApplication.class })
+@SpringBootTest(classes = { DeliveryApplication.class })
 public class CucumberSpingConfiguration {
     
 }

@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: devery
+  name: delivery
   labels:
-    app: devery
+    app: delivery
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: devery
+    app: delivery
